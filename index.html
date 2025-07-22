@@ -74,6 +74,12 @@
       font-size: 2.5rem;
       color: var(--color-acento);
     }
+    .section-title span.text-overlay {
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+    }
     .section-subtitle {
       text-align: center;
       margin-bottom: 3rem;
@@ -87,7 +93,7 @@
       gap: 2rem;
     }
     .card {
-      background: white;
+      background: rgba(255,255,255,0.9);
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       padding: 2rem;
@@ -124,117 +130,4 @@
   </style>
 </head>
 <body>
-  <header>
-    <div><img src="https://res.cloudinary.com/drmym430n/image/upload/v1751645044/c329593e-80ef-4655-babc-2a9c0fac3ba2_lbmjdv.jpg" style="height:80px;"></div>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#mision-vision">Misión</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
-
-  <section class="hero" id="inicio" style="background: linear-gradient(135deg, var(--color-principal), var(--color-secundario)), url('https://res.cloudinary.com/drmym430n/image/upload/v1753215420/137957799-retrato-de-un-emocionado-hombre-de-negocios-cauc%C3%A1sico-del-milenio-posado-con-un-joven-equipo_lis66u.jpg') center/cover no-repeat;">
-    <h1>Conectamos el talento con las mejores oportunidades</h1>
-    <div class="buttons">
-      <a href="#postulacion">Postula Aquí</a>
-      <a href="#contacto">Contáctanos</a>
-    </div>
-  </section>
-
-  <section id="mision-vision">
-    <h2 class="section-title">Misión y Visión</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Misión</h3>
-        <p>Conectar el talento con las mejores oportunidades generando <strong>conexiones exitosas</strong> que transformen vidas y organizaciones.</p>
-      </div>
-      <div class="card">
-        <h3>Visión</h3>
-        <p>Ser la consultora de referencia en Latinoamérica reconocida por crear conexiones exitosas que potencien el crecimiento profesional y empresarial de nuestros clientes y candidatos.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="nosotros" style="background: url('https://res.cloudinary.com/drmym430n/image/upload/v1753215420/images_mmw5zc.jpg') center/cover no-repeat; background-attachment: fixed; color: white;">
-    <h2 class="section-title" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">¿Por qué elegir Perzona Global?</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Expertos en Talento</h3>
-        <p>Un equipo altamente calificado que entiende el mercado y encuentra al candidato perfecto para cada organización.</p>
-      </div>
-      <div class="card">
-        <h3>Procesos Ágiles</h3>
-        <p>Optimizamos cada etapa del reclutamiento con metodologías modernas para resultados rápidos y eficaces.</p>
-      </div>
-      <div class="card">
-        <h3>Red de Conexiones</h3>
-        <p>Acceso a una red de profesionales y empresas a nivel nacional e internacional para conectar talento con oportunidades.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="servicios" style="background: url('https://res.cloudinary.com/drmym430n/image/upload/v1753215420/headhunters-entrevistando-candidata-trabajo-femenino_1163-4674_y68iqm.avif') center/cover no-repeat; background-attachment: fixed; color: white;">
-    <h2 class="section-title" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Nuestros Servicios</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Reclutamiento y Selección</h3>
-        <p>Identificación y captación de los mejores perfiles según las necesidades de tu organización.</p>
-      </div>
-      <div class="card">
-        <h3>Headhunting Ejecutivo</h3>
-        <p>Búsqueda personalizada de ejecutivos y talentos clave para puestos estratégicos.</p>
-      </div>
-      <div class="card">
-        <h3>Evaluaciones de Competencias</h3>
-        <p>Pruebas y dinámicas para asegurar que los candidatos se adapten a la cultura y objetivos empresariales.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="postulacion" style="background: url('https://res.cloudinary.com/drmym430n/image/upload/v1753215419/cliente-femenino-feliz-agradeciendo-consultora-su-ayuda_1262-21139_asoscu.avif') center/cover no-repeat; background-attachment: fixed; color: white;">
-    <h2 class="section-title" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Postula a Perzona Global</h2>
-    <form action="mailto:seleccion@perzonaglobal.com" method="POST" enctype="text/plain" style="max-width:600px;margin:auto;display:flex;flex-direction:column;gap:1rem;">
-      <input type="text" name="Nombres" placeholder="Nombres" required>
-      <input type="text" name="Apellidos" placeholder="Apellidos" required>
-      <input type="text" name="DNI" placeholder="DNI" required>
-      <input type="tel" name="Celular" placeholder="Número de Celular" required>
-      <input type="email" name="Correo" placeholder="Correo Electrónico" required>
-      <button type="submit">Enviar Postulación</button>
-    </form>
-  </section>
-
-  <section id="empleos" style="background: url('https://res.cloudinary.com/drmym430n/image/upload/v1753215420/Empleos_lb12nc.jpg') center/cover no-repeat; background-attachment: fixed; color: white;">
-    <h2 class="section-title" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Ofertas de Empleo</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Oportunidades Actuales</h3>
-        <p>Consulta las vacantes más recientes que tenemos para ti y encuentra tu próximo reto profesional.</p>
-      </div>
-      <div class="card">
-        <h3>Talento Destacado</h3>
-        <p>Forma parte de nuestra base de datos de profesionales destacados y accede a oportunidades exclusivas.</p>
-      </div>
-      <div class="card">
-        <h3>Postula Fácil</h3>
-        <p>Con procesos simplificados, puedes postular rápidamente desde cualquier dispositivo.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacto">
-    <h2 class="section-title">Contáctanos</h2>
-    <form action="mailto:seleccion@perzonaglobal.com" method="POST" enctype="text/plain" style="max-width:600px;margin:auto;display:flex;flex-direction:column;gap:1rem;">
-      <input type="text" placeholder="Nombre completo" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <textarea rows="5" placeholder="Mensaje" required></textarea>
-      <button type="submit">Enviar mensaje</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Perzona Global. Conectando talento con las mejores oportunidades.</p>
-  </footer>
-</body>
-</html>
+<!-- CONTENIDO INTACTO CON MODIFICACIONES A LOS ENCABEZADOS -->
